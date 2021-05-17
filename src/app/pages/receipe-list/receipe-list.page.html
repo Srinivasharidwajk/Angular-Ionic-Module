@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>UiBrains Kitchen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let receipe of receipeList" routerLink="/receipes/{{receipe.id}}">
+      <ion-avatar>
+        <ion-img [src]="receipe.imageUrl"></ion-img>
+      </ion-avatar>
+      <ion-label> {{receipe.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

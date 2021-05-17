@@ -1,0 +1,16 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{message}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-button (click)="updateMessage('Good Morning')" color="success" size="small">Good Morning</ion-button>
+          <ion-button (click)="updateMessage('Good Afternoon')" color="warning" size="small">Good Afternoon</ion-button>
+          <ion-button (click)="updateMessage('Good Evening')" color="danger" size="small">Good Evening</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
